@@ -1,0 +1,13 @@
+[Unit]
+Description=REStake Akash
+Requires=network-online.target
+Wants=restake-akash.timer
+
+[Service]
+User=keupsonite
+Type=oneshot
+WorkingDirectory=/home/keupsonite/restake
+ExecStart=bash /home/keupsonite/ez_restake_utilities/scripts/run_restake.sh akash
+
+[Install]
+WantedBy=multi-user.target

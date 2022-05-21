@@ -1,0 +1,13 @@
+[Unit]
+Description=REStake
+Requires=network-online.target
+Wants=restake.timer
+
+[Service]
+User=keupsonite
+Type=oneshot
+WorkingDirectory=/home/keupsonite/restake
+ExecStart=bash /home/keupsonite/ez_restake_utilities/scripts/run_restake.sh
+
+[Install]
+WantedBy=multi-user.target

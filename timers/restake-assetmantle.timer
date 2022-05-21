@@ -1,0 +1,10 @@
+[Unit]
+Description=REStake bot timer
+
+[Timer]
+AccuracySec=1min
+OnBootSec=1min
+OnUnitActiveSec=1min
+
+[Install]
+WantedBy=timers.target

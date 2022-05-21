@@ -1,0 +1,13 @@
+[Unit]
+Description=REStake Cosmos
+Requires=network-online.target
+Wants=restake-cosmos.timer
+
+[Service]
+User=keupsonite
+Type=oneshot
+WorkingDirectory=/home/keupsonite/restake
+ExecStart=bash /home/keupsonite/ez_restake_utilities/scripts/run_restake.sh cosmoshub
+
+[Install]
+WantedBy=multi-user.target
