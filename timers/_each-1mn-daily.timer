@@ -1,5 +1,5 @@
 [Unit]
-Description=REStake bot timer
+Description=Timer each minutes daily
 
 [Timer]
 AccuracySec=1min

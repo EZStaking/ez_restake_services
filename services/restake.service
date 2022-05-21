@@ -1,7 +1,7 @@
 [Unit]
 Description=REStake
 Requires=network-online.target
-Wants=restake.timer
+Wants=restake-twice-daily.timer
 
 [Service]
 User=keupsonite
